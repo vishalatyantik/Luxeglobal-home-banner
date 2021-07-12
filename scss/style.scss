@@ -1,0 +1,69 @@
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+*,*::before,*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.img_wrapper{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.img_ct{
+	// position: absolute;
+	// top: -5%;
+	// left: -5%;
+	// width: 110%;
+	// height: 110%;
+	display: flex;
+	// flex-direction: column;
+	// justify-content: space-between;
+}
+.img_row{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.img{
+	// position: absolute;
+	margin: 0 8.5rem;
+	flex-shrink: 0;
+	transform: scale(0.7);
+	opacity: 0;
+	visibility: hidden;
+	transform-origin: center;
+	img{
+		display: block;
+	}
+	&_1,
+	&_7{
+		width: 300px;
+	}
+	&_2,
+	&_4,
+	&_5{
+		width: 181px;
+	}
+	&_3{
+		width: 254px;
+	}
+	&_6,
+	&_9{
+		width: 282px;
+	}
+	&_8{
+		width: 363px;
+	}
+}
+
+.section{
+	width: 100%;
+	height: 100vh;
+	display: none;
+}
